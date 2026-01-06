@@ -1,2 +1,2 @@
 # hobbies.html
-My hobby of being a Mother and a woman that loves to cook.
+My hobby is being a Mother and a woman that loves to cook.
