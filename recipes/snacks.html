@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healthy Kids Snacks</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+</head>
+
+<body class="bg-amber-50 text-gray-800">
+
+  <!-- Back link -->
+  <div class="max-w-4xl mx-auto px-4 py-6">
+    <a href="../index.html" class="text-amber-600 hover:underline">
+      ← Back to Recipes
+    </a>
+  </div>
+
+  <!-- Recipe Content -->
+<section class="max-w-4xl mx-auto px-4 pb-16 fade-in">
+
+    <img src="../assets/veggie-fruit-smoothie.jpg"
+         alt="Healthy Kids Snacks"
+         class="w-full h-65 object-cover rounded-xl mb-6">
+
+    <h1 class="text-3xl font-bold mb-4">Healthy Kids Snacks</h1>
+
+    <p class="mb-6">
+      Simple, nutritious snack ideas that are perfect for kids and easy
+      for busy moms to prepare.
+    </p>
+
+    <h2 class="text-xl font-semibold mb-2">Snack Ideas</h2>
+    <ul class="list-disc list-inside mb-6">
+      <li>Sliced fruits with yogurt dip</li>
+      <li>Peanut butter and apple slices</li>
+      <li>Mini sandwiches with whole wheat bread</li>
+      <li>Boiled eggs with a pinch of salt</li>
+      <li>Homemade popcorn</li>
+    </ul>
+
+    <h2 class="text-xl font-semibold mb-2">How to Prepare</h2>
+    <ol class="list-decimal list-inside space-y-2">
+      <li>Wash and cut fruits into bite-size pieces.</li>
+      <li>Prepare dips or spreads ahead of time.</li>
+      <li>Store snacks in containers for quick access.</li>
+      <li>Serve fresh or pack for school lunches.</li>
+    </ol>
+
+    <p class="mt-6 font-semibold">
+      💡 Mom Tip: Prep snacks on weekends to save time during the week.
+    </p>
+  </section>
+
+</body>
+</html>
