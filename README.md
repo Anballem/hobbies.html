@@ -16,7 +16,7 @@ A personal HTML and Tailwind CSS project showcasing my love for cooking and bein
 2. Open `index.html` in your browser
 3. Customize text, colors, and images
 
-## 💡 Future Ideas
+## &#128161; Future Ideas
 - Add a recipe blog
 - Photo gallery of meals
 - Parenting tips section
