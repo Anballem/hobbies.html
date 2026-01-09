@@ -2,14 +2,14 @@
 
 A personal HTML and Tailwind CSS project showcasing my love for cooking and being a mother.
 
-## 🚀 Features
-- Responsive design (mobile, tablet, desktop)
-- Built with Tailwind CSS
-- Clean and beginner-friendly structure
+## Features
+- Responsive layout
+- Recipe cards
+- Mobile navigation
+- Tailwind CSS styling
 
-## 🛠️ Technologies Used
-- HTML5
-- Tailwind CSS (CDN)
+## Live Demo
+https://anballem.github.io/hobbies.html/
 
 
 
