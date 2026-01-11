@@ -19,7 +19,8 @@
 <h1 class="text-2xl font-bold text-amber-600">Food & Motherhood</h1>
 
     <!-- Hidden checkbox -->
-    <input type="checkbox" id="menu-toggle" class="peer hidden">
+    <input type="checkbox" id="menu-toggle" class="peer hidden" title="Toggle mobile menu" aria-label="Toggle mobile menu"/>
+    <label for="menu-toggle" class="sr-only">Toggle mobile menu</label>
 
     <!-- Desktop Nav -->
     <nav class="hidden md:flex space-x-6 font-medium">
@@ -31,14 +32,14 @@
     </nav>
 
     <!-- Mobile Menu Icon -->
-    <label for="menu-toggle" class="md:hidden text-2xl cursor-pointer">
+    <label for="menu-toggle" class="md:hidden text-2xl cursor-pointer" aria-hidden="true">
       ☰
     </label>
   </div>
 
   <!-- Mobile Menu -->
   <div class="hidden peer-checked:block md:hidden bg-white border-t">
-    <nav class="flex flex-col px-4 py-4 space-y-3">
+    <nav class="flex flex-col px-4 py-4 space-y-3" aria-label="Mobile Navigation">
       <a href="#about" class="hover:text-amber-600">About</a>
       <a href="#recipes" class="hover:text-amber-600">Recipes</a>
       <a href="#mom-tips" class="hover:text-amber-600">Mom Life Tips</a>
@@ -48,7 +49,7 @@
   </div>
 </header>
 
-
+<main>
 <!-- Hero Section -->
 <section class="bg-amber-100 py-20 text-center">
 <h2 class="text-4xl font-bold mb-4">Cooking with Love, Raising with Care</h2>
@@ -80,19 +81,15 @@
 </div>
 </div>
 
-<!-- Recipe Card  Pancakes -->
+<!-- Recipe Card Pancakes -->
 <div class="bg-amber-50 rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
 <img src="assets/pancakes.jpg" alt="Pancakes and syrup" class="w-full h-48 object-cover">
 <div class="p-6">
-
-<h4 class="text-xl font-bold mb-2">Quick Breakfast Pancakes</h4>
-
-<p class="text-sm mb-4">Soft pancakes made in minutes for busy school mornings.</p>
-
-<a href="recipes/pancakes.html"
-   class="text-amber-600 font-semibold hover:underline">
-  Read Recipe →
-</a>
+  <h4 class="text-xl font-bold mb-2">Quick Breakfast Pancakes</h4>
+  <p class="text-sm mb-4">Soft pancakes made in minutes for busy school mornings.</p>
+  <a href="recipes/pancakes.html" class="text-amber-600 font-semibold hover:underline">
+    Read Recipe →
+  </a>
 </div>
 </div>
 
@@ -106,7 +103,6 @@
    class="text-amber-600 font-semibold hover:underline">
   Read Recipe →
 </a>
-
 </div>
 </div>
 </div>
@@ -167,34 +163,32 @@ Alongside cooking and motherhood, I’ve recently discovered a strong passion fo
 </div>
 
 <div class="bg-white rounded-xl shadow-lg p-6">
-<h4 class="text-xl font-bold mb-2">&#128640;Future Goals</h4>
-<p class="text-sm">To grow as a frontend developer and build meaningful, helpful applications.</p>
+  <h4 class="text-xl font-bold mb-2">&#128640;Future Goals</h4>
+    <p class="text-sm">To grow as a frontend developer and build meaningful, helpful applications.</p>
 </div>
 </div>
 </section>
 
 
 <!-- GitHub Profile Link -->
-<div class="text-center">
+<div class="text-center py-8">
 <a href="https://github.com/ANBALLEM" target="_blank" rel="noopener noreferrer"
 class="inline-block bg-amber-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-amber-700 transition">
 Visit My GitHub Profile
 </a>
 </div>
-</section>
 
 
 <!-- Contact Section -->
 <section id="contact" class="bg-amber-600 text-white py-16">
 <div class="max-w-6xl mx-auto px-4">
 <h3 class="text-3xl font-semibold mb-6">Contact Me</h3>
-<p>Email: <span class="underline">anballem@foodandmotherhood.com</span></p>
-</div>
-</section>
+<p>Email: <a class="underline" href="mailto:anballem@foodandmotherhood.com">anballem@foodandmotherhood.com</a></p>
+
 
 
 <!-- Contact Form -->
-<form class="bg-white text-gray-800 rounded-xl shadow-lg p-6 space-y-4">
+<form action="form action" method="POST" class="bg-white text-gray-800 rounded-xl shadow-lg p-6 space-y-4">
 <div>
 <label class="block mb-1 font-semibold" for="name">Name</label>
 <input 
@@ -225,24 +219,13 @@ Send Message
 </form>
 </div>
 </section>
+</main>
 
 
 <!-- Footer -->
-<footer id="contact" class="bg-amber-600 text-white py-6 text-center">
+<footer id="contact" class="bg-gray-800 text-gray-300 text-center py-4">
 
 <p>&copy; 2026 Food & Motherhood. All rights reserved.</p>
 </footer>
-
-<script>
-  const menuBtn = document.getElementById('menu-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
-
-  menuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-  });
-</script>
-
-
-
 </body>
 </html>
