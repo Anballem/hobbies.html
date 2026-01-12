@@ -1,26 +1,15 @@
 # hobbies.html
 
-A personal HTML and Tailwind CSS project showcasing my love for cooking and being a mother.
+A personal HTML and Tailwind CSS project showcasing my love for cooking and being a mother with a little bit of coding.
 
-## 🚀 Features
-- Responsive design (mobile, tablet, desktop)
-- Built with Tailwind CSS
-- Clean and beginner-friendly structure
+## Features
+- Responsive layout
+- Recipe cards
+- Mobile navigation
+- Tailwind CSS styling
 
-## 🛠️ Technologies Used
-- HTML5
-- Tailwind CSS (CDN)
+## Live Demo
+https://anballem.github.io/hobbies.html/
 
-## 📂 How to Use
-1. Clone the repository
-2. Open `index.html` in your browser
-3. Customize text, colors, and images
 
-## &#128161; Future Ideas
-- Add a recipe blog
-- Photo gallery of meals
-- Parenting tips section
-
----
-Made with love ❤️
 
