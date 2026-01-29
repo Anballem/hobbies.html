@@ -5,8 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Food & Motherhood</title>
 
-  <!-- Tailwind CSS-->
+<!-- Tailwind CSS-->
    <script src="https://cdn.tailwindcss.com"></script>
+   <style>
+       /* Dropdown animation */
+       #mobile-menu {
+           transition: all 0.3s ease-in-out;
+       }
+       
+       #mobile-menu:not(.hidden) {
+           animation: slideDown 0.3s ease-out;
+       }
+       
+       @keyframes slideDown {
+           from {
+               opacity: 0;
+               transform: translateY(-10px);
+           }
+           to {
+               opacity: 1;
+               transform: translateY(0);
+           }
+       }
+   </style>
   </head>
 
 
@@ -18,7 +39,7 @@
   <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
 <h1 class="text-2xl font-bold text-amber-600">Food & Motherhood</h1>
 
-    <!-- Hidden checkbox -->
+    <!-- Tailwind-Only Dark Mode Toggle (Checkbox Method)  -->
     <input type="checkbox" id="menu-toggle" class="peer hidden" title="Toggle mobile menu" aria-label="Toggle mobile menu"/>
     <label for="menu-toggle" class="sr-only">Toggle mobile menu</label>
 
@@ -31,21 +52,22 @@
       <a href="#coding" class="hover:text-amber-600">Coding Journey</a>
     </nav>
 
-    <!-- Mobile Menu Icon -->
-    <label for="menu-toggle" class="md:hidden text-2xl cursor-pointer" aria-hidden="true">
-      ☰
-    </label>
-  </div>
 
-  <!-- Mobile Menu -->
-  <div class="hidden peer-checked:block md:hidden bg-white border-t">
-    <nav class="flex flex-col px-4 py-4 space-y-3" aria-label="Mobile Navigation">
-      <a href="#about" class="hover:text-amber-600">About</a>
-      <a href="#recipes" class="hover:text-amber-600">Recipes</a>
-      <a href="#mom-tips" class="hover:text-amber-600">Mom Life Tips</a>
-      <a href="#contact" class="hover:text-amber-600">Contact</a>
-      <a href="#coding" class="hover:text-amber-600">Coding Journey</a>
+    
+
+    <!-- Mobile Menu Icon -->
+      <button id="menu-btn" class="md:hidden text-2xl text-gray-800 dark:text-white">☰</button>
     </nav>
+
+  <!-- Mobile Menu Dropdown -->
+  <div id="mobile-menu" class="hidden md:hidden absolute left-0 right-0 top-full bg-white dark:bg-gray-900 shadow-lg px-4 pb-4 z-40 dropdown-menu">
+      <div class="flex flex-col space-y-3 pt-2">
+          <a href="#about" class="hover:text-amber-600 py-2">About</a>
+          <a href="#recipes" class="hover:text-amber-600 py-2">Recipes</a>
+          <a href="#mom-tips" class="hover:text-amber-600 py-2">Mom Life Tips</a>
+          <a href="#contact" class="hover:text-amber-600 py-2">Contact</a>
+          <a href="#coding" class="hover:text-amber-600 py-2">Coding Journey</a>
+      </div>
   </div>
 </header>
 
@@ -60,7 +82,7 @@
 <!-- About Section -->
 <section id="about" class="max-w-6xl mx-auto px-4 py-16">
 <h3 class="text-3xl font-semibold mb-6">About Me</h3>
-<p class="leading-relaxed">I am a passionate home cook and a proud mother. My kitchen is where memories are made, and my children are my biggest inspiration. This website is a reflection of my journey balancing delicious meals and motherhood.</p>
+<p class="leading-relaxed">I am a passionate home cook and a proud mother. My kitchen is where memories are made, and my children are my biggest inspiration. This website is a reflection of my journey balancing delicious meals and motherhood, among this all becoming a programmer.</p>
 </section>
 
 
@@ -224,7 +246,13 @@ Send Message
 <!-- Footer -->
 <footer id="contact" class="bg-gray-800 text-gray-300 text-center py-4">
 
-<p>&copy; 2026 Food & Motherhood. All rights reserved.</p>
+  <p>&copy; 2026 Food & Motherhood. All rights reserved.</p>
 </footer>
+
+<!-- Mobile Menu Toggle Script -->
+
+<script src="script.js"></script>
+
+
 </body>
 </html>
